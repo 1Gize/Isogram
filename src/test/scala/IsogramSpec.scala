@@ -1,14 +1,14 @@
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
-
+import Isogram._
 class IsogramSpec extends AnyFlatSpec with should.Matchers{
-  def isIsogram(s:String) = s match {
-    case "six-year-old" => true
-    case "downstream" => true
-    case "background" => true
-    case "lumberjacks" => true
-    case "isograms" => false
-  }
+//  def isIsogram(s:String) = s match {
+//    case "six-year-old" => true
+//    case "downstream" => true
+//    case "background" => true
+//    case "lumberjacks" => true
+//    case "isograms" => false
+//  }
   it should  " return true for input  six-year-old"in {
     isIsogram("six-year-old") shouldBe true
   }
